@@ -1,0 +1,41 @@
+.card-container{
+    position: relative;
+
+}
+
+.card-body{
+    /* position: absolute; */
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+}
+
+.card-body-clicked{
+    transform: rotateY(180deg);
+
+    .back-card{
+        display: none;
+    }
+
+    .front-card{
+        display: block;
+    }
+}
+
+.back-card{
+    /* position: absolute; */
+    /* width: 100%;
+    height: 100%; */
+    /* backface-visibility: hidden; */
+
+}
+.front-card{
+    /* position: absolute; */
+    /* width: 100%;
+    height: 100%; */
+    display: none;
+    /* backface-visibility: hidden; */
+    transform: rotateY(180deg);
+
+}
